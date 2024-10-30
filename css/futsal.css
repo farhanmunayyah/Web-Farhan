@@ -1,0 +1,168 @@
+body {
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: black; 
+    color: white; 
+}
+
+nav{
+	background-color:  #1B264F;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0 15px;
+	padding:0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+nav ul{
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px;
+
+}
+
+ul li{
+	list-style: none;
+	margin: 10px 0;
+}
+
+li.empty{
+	width: 90px;
+	border-top: 1px solid black;
+	top:-5px;
+	position: relative; 
+}
+
+nav li a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+nav li a:hover{
+	text-decoration: underline;
+
+}
+
+/* Styling untuk dropdown */
+.dropdown {
+	display: none; /* Sembunyikan dropdown secara default */
+	position: absolute; /* Posisi dropdown */
+	background-color: white; /* Warna latar belakang */
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+	z-index: 10; /* Pastikan dropdown muncul di atas elemen lain */
+}
+
+li:hover .dropdown {
+	display: block; /* Tampilkan dropdown saat hover pada elemen li */
+}
+
+.dropdown li {
+	list-style: none; /* Hapus bullet points */
+	display: flex; /* Buat link menjadi block */
+	flex-direction: column;
+	text-align: left;
+
+}
+
+.dropdown li a {
+	display: block; /* Buat link menjadi block */
+	padding: 8px 8px; /* Padding untuk link */
+	text-decoration: none; /* Hapus garis bawah */
+	color: black; /* Warna teks */
+}
+
+.dropdown li a:hover {
+	background-color: #f1f1f1; /* Warna latar belakang saat hover */
+
+}
+
+h2 {
+    color: white; 
+    align-items: center;
+    text-align: center;
+    text-decoration: underline; 
+    text-decoration-color: white; 
+    margin: 0;
+    padding-top: 7rem;
+}
+
+.dropdown{
+	margin: 0;
+	padding: 0;
+}
+
+/* bulutangkis.css */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 400px;
+    height: 290px; 
+    object-fit: cover; 
+    margin: 10px; 
+    border-radius: 5px; 
+    border: 2px solid #3b4b8f; 
+    padding: 5px; 
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+
+}
+
+.gallery img.zoomed {
+    transform: scale(1.5);
+
+}
+
+video {
+    border: 5px solid #fefefe; /* Warna bingkai */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 10px; /* Ruang di dalam bingkai */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan untuk efek kedalaman */
+    margin: 30px 160px; /* Jarak antar bingkai */
+    overflow: hidden; /* Menghindari konten yang melampaui bingkai */
+    width: 300px;
+    height: auto;
+}
+
+
+.content-video {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Pusatkan video */
+    flex-wrap: wrap;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px; /* Tambahkan padding horizontal untuk ruang yang lebih baik */
+    background-color: #37517e; /* Warna latar belakang footer */
+    color: white; /* Warna teks */
+    width: 100%; /* Memastikan footer memenuhi lebar halaman */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan untuk efek kedalaman */
+}
+
+footer p {
+    font-size: 1vw; /* Ukuran font responsif */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    margin: 10px 0; /* Menambahkan margin atas dan bawah */
+    transition: font-size 0.3s ease; /* Menambahkan efek transisi */
+}
+
+footer p:hover {
+    font-size: 2vw; /* Ukuran font saat hover */
+}
